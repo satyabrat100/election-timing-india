@@ -1,0 +1,211 @@
+{
+ "inputs": {
+  "m_off": 0.92,
+  "K": 11.0,
+  "GDP_lakh_crore": 300.0
+ },
+ "components_per_term_pct_gdp": {
+  "admin": {
+   "p5": 0.011,
+   "p50": 0.0204,
+   "p95": 0.0318,
+   "max": 0.0372
+  },
+  "campaign": {
+   "p5": 0.0112,
+   "p50": 0.0315,
+   "p95": 0.0725,
+   "max": 0.1189
+  },
+  "mcc": {
+   "p5": 0.0114,
+   "p50": 0.0615,
+   "p95": 0.1222,
+   "max": 0.151
+  },
+  "attention": {
+   "p5": 0.004,
+   "p50": 0.0518,
+   "p95": 0.1872,
+   "max": 0.3218
+  },
+  "pbc": {
+   "p5": 0.0,
+   "p50": 0.0,
+   "p95": 0.0,
+   "max": 0.0
+  },
+  "uncertainty_cost": {
+   "p5": 0.0164,
+   "p50": 0.052,
+   "p95": 0.1379,
+   "max": 0.3005
+  }
+ },
+ "G_sync_per_term": {
+  "p5": -0.012,
+  "p50": 0.1146,
+  "p95": 0.3011,
+  "max": 0.5327
+ },
+ "G_sync_per_year": {
+  "p5": -0.0024,
+  "p50": 0.0229,
+  "p95": 0.0602,
+  "max": 0.1065
+ },
+ "G_two_per_term": {
+  "p5": 0.0188,
+  "p50": 0.1004,
+  "p95": 0.2472,
+  "max": 0.4326
+ },
+ "G_two_per_year": {
+  "p5": 0.0038,
+  "p50": 0.0201,
+  "p95": 0.0494,
+  "max": 0.0865
+ },
+ "share_two_of_sync_median": 0.874,
+ "prob_G_sync_negative": 0.069,
+ "prob_G_two_gt_G_sync": 0.315,
+ "claimed_hlc_pct_gdp": 1.5,
+ "ratio_claim_to_p95_sync_per_term": 5.0,
+ "break_even_accountability_rs_crore_per_year_p50_p95": [
+  6874.0,
+  18065.0
+ ],
+ "duration_saving_per_ls_pct_gdp": {
+  "p5": 0.0045,
+  "p50": 0.0245,
+  "p95": 0.0443,
+  "max": 0.0466
+ },
+ "pbc_upper_per_term_pct_gdp": 0.484,
+ "G_sync_with_pbc_removed_per_term": {
+  "p5": 0.4716,
+  "p50": 0.5982,
+  "p95": 0.7847,
+  "max": 1.0163
+ },
+ "horizon_gain_needed_pct_gdp_per_year_for_claim": 0.277,
+ "accountability_break_even_pct_state_spending": {
+  "dpi_0.16_p50": 1.01,
+  "dpi_0.16_p95": 2.66,
+  "dpi_0.21_p50": 0.77,
+  "dpi_0.21_p95": 2.03
+ },
+ "robustness": {
+  "uniform": {
+   "sync_p50": 0.115,
+   "sync_p95": 0.301,
+   "two_p50": 0.101,
+   "share_two_of_sync_p50": 0.874,
+   "prob_two_ge_sync": 0.315
+  },
+  "spearman_with_G_sync": {
+   "kappa": 0.738,
+   "theta": 0.392,
+   "L_S": 0.186,
+   "rho_campaign": 0.072,
+   "share_saved": 0.105,
+   "resource_share": 0.144
+  },
+  "pert": {
+   "sync_p50": 0.124,
+   "sync_p95": 0.24,
+   "two_p50": 0.109,
+   "share_two_of_sync_p50": 0.872,
+   "prob_two_ge_sync": 0.257
+  },
+  "loguniform_kappa": {
+   "sync_p50": 0.06,
+   "sync_p95": 0.24,
+   "two_p50": 0.063,
+   "share_two_of_sync_p50": 0.975,
+   "prob_two_ge_sync": 0.545
+  },
+  "correlated_0.5": {
+   "sync_p50": 0.126,
+   "sync_p95": 0.381,
+   "two_p50": 0.112,
+   "share_two_of_sync_p50": 0.871,
+   "prob_two_ge_sync": 0.315
+  },
+  "eta_2": {
+   "sync_p50": 0.115,
+   "sync_p95": 0.301,
+   "two_p50": 0.115,
+   "share_two_of_sync_p50": 0.97,
+   "prob_two_ge_sync": 0.491
+  },
+  "eta_3": {
+   "sync_p50": 0.115,
+   "sync_p95": 0.301,
+   "two_p50": 0.123,
+   "share_two_of_sync_p50": 1.02,
+   "prob_two_ge_sync": 0.562
+  }
+ },
+ "break_even_kappa_pct_daily_output": {
+  "one_off_1.5pct_per_term": 6.0,
+  "level_shift_1.5pct_every_year": 30.0
+ },
+ "common_basis": {
+  "claim_one_off_per_term": 1.5,
+  "claim_permanent_level_per_term": 7.5,
+  "calib_sync_p50": 0.1146,
+  "calib_sync_p95": 0.3011,
+  "ratio_one_off_to_p50": 13.1,
+  "ratio_one_off_to_p95": 5.0,
+  "ratio_level_to_p95": 24.9
+ },
+ "kappa_scenarios": {
+  "zero": {
+   "sync_p50": 0.001,
+   "sync_p95": 0.056,
+   "prob_sync_negative": 0.489,
+   "two_p50": 0.021
+  },
+  "very_low_0.05pct": {
+   "sync_p50": 0.013,
+   "sync_p95": 0.069,
+   "prob_sync_negative": 0.371,
+   "two_p50": 0.029
+  },
+  "high_1pct": {
+   "sync_p50": 0.24,
+   "sync_p95": 0.409,
+   "prob_sync_negative": 0.002,
+   "two_p50": 0.193
+  },
+  "baseline_range": {
+   "sync_p50": 0.1146,
+   "sync_p95": 0.3011,
+   "prob_sync_negative": 0.069,
+   "two_p50": 0.1004
+  }
+ },
+ "waste_scenarios": {
+  "0.0": {
+   "added": 0.0,
+   "sync_p50": 0.115,
+   "sync_p95": 0.301
+  },
+  "0.25": {
+   "added": 0.121,
+   "sync_p50": 0.235,
+   "sync_p95": 0.422
+  },
+  "0.5": {
+   "added": 0.242,
+   "sync_p50": 0.356,
+   "sync_p95": 0.543
+  },
+  "1.0": {
+   "added": 0.484,
+   "sync_p50": 0.598,
+   "sync_p95": 0.785
+  }
+ }
+}
